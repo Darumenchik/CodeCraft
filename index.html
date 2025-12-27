@@ -3,10 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!-- Favicon для браузера -->
 <link rel="icon" href="favicon.ico" type="image/x-icon">
-
-<!-- Favicon для Apple и мобильных устройств -->
 <link rel="apple-touch-icon" href="favicon.png">
 
 <title>Программист | Java, Python, C++, Backend, Веб-разработка</title>
@@ -162,6 +159,10 @@ footer{
     display:none;
     flex-direction:column;
     text-align:center;
+    transition:all .3s ease;
+  }
+  .nav-links.show{
+    display:flex;
   }
   .nav-links a{
     padding:15px 0;
@@ -250,17 +251,12 @@ footer{
 </footer>
 
 <script>
-const toggle=document.getElementById("mobileToggle");
-const nav=document.getElementById("navLinks");
-toggle.onclick=()=>nav.style.display=
-  nav.style.display==="flex"?"none":"flex";
+const toggle = document.getElementById("mobileToggle");
+const nav = document.getElementById("navLinks");
+toggle.addEventListener("click", () => {
+  nav.classList.toggle("show");
+});
 </script>
 
 </body>
 </html>
-
-
-
-
-
-
