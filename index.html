@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Программист | Java, Python, C++, Backend, Веб-разработка</title>
+
+<meta name="description" content="Профессиональный программист: Java, Python, C++, Backend и веб-разработка. Создание сайтов, серверов, API, автоматизация и SEO-оптимизация.">
+<meta name="keywords" content="программист, java разработчик, python программист, c++ разработчик, backend разработка, веб разработка">
+<meta name="author" content="Dauren">
+
+<link rel="canonical" href="https://darumeni.github.io/">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:Inter,system-ui,sans-serif;
+  background:#0b0f1a;
+  color:#fff;
+  line-height:1.7;
+}
+a{color:#00cec9;text-decoration:none}
+
+.container{width:90%;max-width:1200px;margin:auto}
+
+/* HEADER */
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  background:rgba(11,15,26,.9);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+.nav-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 0;
+}
+.logo{
+  font-weight:700;
+  font-size:1.2rem;
+}
+.nav-links a{
+  margin-left:20px;
+  font-weight:500;
+}
+.mobile-toggle{
+  display:none;
+  font-size:1.5rem;
+  cursor:pointer;
+}
+
+/* HERO */
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding-top:80px;
+  background:radial-gradient(circle at top,#1c2250,#0b0f1a);
+}
+.hero h1{
+  font-size:3.2rem;
+  animation:fadeUp 1s ease forwards;
+}
+.hero p{
+  margin:20px 0;
+  font-size:1.3rem;
+  opacity:.9;
+  animation:fadeUp 1.4s ease forwards;
+}
+.specialization-links{
+  margin-top:30px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:15px;
+}
+.spec-link{
+  padding:12px 20px;
+  border-radius:30px;
+  background:#141a38;
+  transition:.3s;
+}
+.spec-link:hover{
+  background:#6c5ce7;
+}
+
+/* SECTIONS */
+section{
+  padding:90px 0;
+}
+h2{
+  font-size:2.4rem;
+  margin-bottom:30px;
+  color:#6c5ce7;
+}
+
+/* GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+.page-card{
+  background:#141a38;
+  padding:30px;
+  border-radius:20px;
+  transition:.4s;
+}
+.page-card:hover{
+  transform:translateY(-10px);
+  box-shadow:0 0 35px rgba(0,206,201,.3);
+}
+
+/* CONTACT */
+.contact{
+  text-align:center;
+}
+.contact a{
+  display:inline-block;
+  margin-top:25px;
+  padding:15px 40px;
+  border-radius:50px;
+  background:linear-gradient(135deg,#6c5ce7,#00cec9);
+  color:#fff;
+  font-weight:700;
+}
+
+/* FOOTER */
+footer{
+  background:#070a14;
+  padding:40px;
+  text-align:center;
+  opacity:.85;
+}
+
+/* ANIMATION */
+@keyframes fadeUp{
+  from{opacity:0;transform:translateY(40px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .nav-links{
+    position:absolute;
+    top:60px;
+    right:0;
+    background:#0b0f1a;
+    width:100%;
+    display:none;
+    flex-direction:column;
+    text-align:center;
+  }
+  .nav-links a{
+    padding:15px 0;
+    border-bottom:1px solid #141a38;
+  }
+  .mobile-toggle{display:block}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav-container">
+    <div class="logo">&lt;/&gt; CodeCraft</div>
+    <nav class="nav-links" id="navLinks">
+      <a href="/">Главная</a>
+      <a href="/java-programmist.html">Java</a>
+      <a href="/python-razrabotchik.html">Python</a>
+      <a href="/c-plus-plus.html">C++</a>
+      <a href="/backend-razrabotka.html">Backend</a>
+      <a href="/web-razrabotka.html">Веб</a>
+      <a href="#contact">Контакты</a>
+    </nav>
+    <div class="mobile-toggle" id="mobileToggle">☰</div>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <h1>Профессиональный программист</h1>
+    <p>Java • Python • C++ • Backend • Веб-разработка</p>
+
+    <div class="specialization-links">
+      <a class="spec-link" href="/java-programmist.html">Java программист</a>
+      <a class="spec-link" href="/python-razrabotchik.html">Python разработчик</a>
+      <a class="spec-link" href="/c-plus-plus.html">C++ программист</a>
+      <a class="spec-link" href="/backend-razrabotka.html">Backend</a>
+      <a class="spec-link" href="/web-razrabotka.html">Веб</a>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <h2>Мои специализации</h2>
+    <div class="grid">
+      <div class="page-card">
+        <h3><a href="/java-programmist.html">Java разработка</a></h3>
+        <p>Backend-системы, API, серверы, оптимизация.</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="/python-razrabotchik.html">Python</a></h3>
+        <p>Автоматизация, боты, backend, сервисы.</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="/c-plus-plus.html">C++</a></h3>
+        <p>Высокая производительность и системный код.</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="/backend-razrabotka.html">Backend</a></h3>
+        <p>Серверная логика, безопасность, БД.</p>
+      </div>
+      <div class="page-card">
+        <h3><a href="/web-razrabotka.html">Веб</a></h3>
+        <p>Современные сайты и интерфейсы.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Связаться со мной</h2>
+    <p>Обсудим проект и начнём работу.</p>
+    <a href="mailto:darumen2000@gmail.com">Написать</a>
+  </div>
+</section>
+
+</main>
+
+<footer>
+© 2025 CodeCraft — Программист и разработчик
+</footer>
+
+<script>
+const toggle=document.getElementById("mobileToggle");
+const nav=document.getElementById("navLinks");
+toggle.onclick=()=>nav.style.display=
+  nav.style.display==="flex"?"none":"flex";
+</script>
+
+</body>
+</html>
